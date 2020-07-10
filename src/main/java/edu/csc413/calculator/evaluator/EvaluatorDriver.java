@@ -27,7 +27,8 @@ public class EvaluatorDriver {
                     System.out.print("Enter an Expression: ");
                     exp = input.readLine();
                     res = ev.eval(exp);
-                    System.out.printf("Expression : %s , Result %6d\n", exp, res);
+                    System.out.printf("Expression : %s , Result %6d%n", exp, res);
+                    return;
                 }
             }catch (Exception ex){
                 System.out.println(ex.getMessage());
@@ -36,7 +37,7 @@ public class EvaluatorDriver {
         }else{
             for(String ex : args) {
                 res = ev.eval(ex);
-                System.out.printf("Expression : %s , Result: %-6d\n", ex, res);
+                System.out.printf("Expression : %s , Result: %-6d%n", ex, res);
             }
 
         }

@@ -7,6 +7,10 @@ import java.awt.event.ActionListener;
 
 public class EvaluatorUI extends JFrame implements ActionListener {
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     private TextField txField = new TextField();
     private Panel buttonPanel = new Panel();
 
